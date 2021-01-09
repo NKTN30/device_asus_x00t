@@ -12,3 +12,9 @@ allow kernel vfat:dir { search };
 allow kernel kernel:system { module_request };
 allow kernel fuse:dir { write add_name };
 allow kernel fuse:file { create };
+allow kernel kernel:capability { kill };
+
+# KCAL
+allow kernel kcal_dev:dir relabelto;
+allow kernel kcal_dev:file relabelto;
+allow kernel kcal_dev:lnk_file relabelto;

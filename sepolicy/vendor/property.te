@@ -3,3 +3,16 @@ type hal_audio_prop, property_type;
 type vendor_camera_prop, property_type;
 type vendor_cfg_prop, property_type;
 type baseband_prop, property_type;
+
+#spectrum
+type spectrum_prop, property_type;
+
+# GPUboost
+type gpuboost_prop, property_type;
+
+# CPUboost
+type cpuboost_prop, property_type;
+
+type cpucore_prop, property_type;
+type lkm_prop, property_type;
+type tcp_prop, property_type;

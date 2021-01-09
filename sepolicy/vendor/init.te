@@ -16,3 +16,12 @@ allow init sysfs_wake_lock:file { read open write };
 allow init proc:file { write };
 allow init self:socket { read write };
 allow init self:netlink_route_socket { read };
+
+# Allow init to chown/chmod on pseudo files in /sys
+allow init sysfs_type:file { setattr };
+
+# SELinux Switch
+allow init su:process { noatsecure  rlimitinh  siginh  transition };
+
+# Boost
+allow init vendor_file:file { execute execute_no_trans };
