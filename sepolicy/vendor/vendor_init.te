@@ -36,3 +36,6 @@ set_prop(vendor_init, overlay_prop)
 set_prop(vendor_init, vendor_qcom_ims_prop)
 set_prop(vendor_init, vendor_persist_dpm_prop)
 set_prop(vendor_init, default_prop)
+
+# Dirac
+allow vendor_init dirac_prop:property_service set;
