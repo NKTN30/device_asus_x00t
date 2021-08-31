@@ -21,6 +21,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # SpiceOS
 TARGET_GAPPS_ARCH = arm64
 
+# OFFICIAL SPICEOS Build
+SPICEOS_BUILDTYPE = OFFICIAL
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
 PRODUCT_DEVICE := X00TD
