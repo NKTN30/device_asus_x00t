@@ -15,6 +15,9 @@ TARGET_SCREEN_WIDTH := 1080
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# OnePlusLauncher
+$(call inherit-product-if-exists, vendor/oplauncher/OPLauncher.mk)
+
 # Powerhint
 EAS_POWERHINT_VARIANT := sdm636
 
